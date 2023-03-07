@@ -29,6 +29,11 @@ This is a Node.js web application for finding houses to rent. Users can browse a
 
 Once the server is running, you can access the application by navigating to `http://localhost:3000` in your web browser.
 
+### Register and Login
+
+Before accessing to the site , the user have to first register and then login. After that the user have the accesst to the house searches
+![House Rent Express](https://user-images.githubusercontent.com/54256792/223463090-d2487b34-167b-4349-9703-1a59d0aecdb0.png)
+
 ### Browsing Houses
 
 You can browse available houses by signing up and then clicking on the "home" link in the navigation menu. This will display a list of all available houses.
@@ -36,23 +41,17 @@ You can browse available houses by signing up and then clicking on the "home" li
 ### Personal Profile
 
 you can see your personal profile details in profile section.
-
 ![House Rent Express](https://user-images.githubusercontent.com/54256792/223462226-a7e77f94-4f58-46a9-ab67-827d2e11bfc8.png)
-
-### Register and Login
-
-Before accessing to the site , the user have to first register and then login. After that the user have the accesst to the house searches
-![House Rent Express](https://user-images.githubusercontent.com/54256792/223463090-d2487b34-167b-4349-9703-1a59d0aecdb0.png)
 
 ### About section for House Rental
 
 In About Section, you can see the details of house rental website
-
-![House Rent Express](https://user-images.githubusercontent.com/54256792/223463090-d2487b34-167b-4349-9703-1a59d0aecdb0.png)
+![Screenshot (27)](https://user-images.githubusercontent.com/54256792/223465456-d8635249-f894-49b3-bf37-8fadc89b1e0b.png)
 
 ### Contacting Form
 
 If you hava any query or any issue you can write your query in contact us form which is connected to the mongdb database here
+![Screenshot (28)](https://user-images.githubusercontent.com/54256792/223466233-0d1e8eec-f26a-4f54-8df8-98447bad8de5.png)
 
 ## Contributing
 
