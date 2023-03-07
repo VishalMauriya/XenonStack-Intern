@@ -1,0 +1,28 @@
+<div class="container-fluid mt-5 contact-style" id="contactid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center main-heading">Sign Up</h1>
+                    <div class="row">
+<form action="/signup" method="POST">
+  <div class="form-group">
+       <div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="name" name="name" required>
+  </div>
+  <br>
+  <div class="form-group"> 
+    <label for="exampleInputEmail1">Email address</label>
+    <input email="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="password" name="password" required>
+  </div>
+  <br>
+  <a href="/login">Already a user? Sign In</a>
+  <br><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

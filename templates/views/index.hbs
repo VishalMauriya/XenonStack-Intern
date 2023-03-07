@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+
+{{!-- section start  --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                            <h2 class="vivek" id="typedtext"></h2>
+                            <p>Hurry up! Go for <span>HouseRental ✌️</span></p>
+                            <body>
+                             <div class="vivek" id="typedtext"></div>
+                            </body>
+                            <button class="btn-style btn-primary"> <a style="color: white;" href="/about">About House Rental</a></button>
+                        </div>
+                {{!-- right side --}}
+                        <div class="col-md-6 col-12 hero-text order-md-1 order-1">
+                            <figure>
+                                <img src="images/home.jpeg" alt="home_image" height="300" width="500">
+                            </figure>
+                               <br><br>   <br><br>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+var aText = new Array(
+"Find your perfect space, your home away from home."
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+        </script>
+
+    {{!-- section ends --}}
+
+    {{!-- start about us  --}}
+
+    
+      {{!-- {{>about}} --}}
+
+    {{!--  end about us   --}}
+
+    {{!-- start skills us  --}}
+            {{>imagesection}}
+    {{!--  end skills us   --}}
+
+     
+
+            {{!-- start contact us  --}}
+            {{>contact}}
+    {{!--  end contact us   --}}
+       {{!-- start map us  --}}
+            {{>maps}}
+    {{!--  end map us   --}}
+
+    {{!-- {{>signup}} --}}
+
+    {{!-- {{>login}} --}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+
+    <footer style="margin-top: 13px;">
+        <p style="background-color: azure;">Developed with ❤️</i> BY Vishal Mauriya using MongoDB, Node , Express , html , css , javascript</p>
+    </footer>
+</body>
+</html>
