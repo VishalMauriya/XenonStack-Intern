@@ -9,7 +9,7 @@
     "start": "node src/app.js"
   },
   "keywords": [],
-  "author": "vivek dhiman",
+  "author": "vishal mauriya",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
